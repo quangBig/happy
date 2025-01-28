@@ -457,7 +457,7 @@ body {
 
 .bottom-panel {
     position: fixed;
-    bottom: -200px;
+    bottom: -250px;
     left: 5%;
     /* Điều chỉnh để vừa màn hình nhỏ */
     width: 90%;
