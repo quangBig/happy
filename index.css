@@ -15,7 +15,6 @@ html {
 body {
     overflow: hidden;
     color: rgba(255, 255, 255, 0.5);
-    font-family: "Russo One", arial, sans-serif;
     line-height: 1.25;
     letter-spacing: 0.06em;
 }
@@ -449,8 +448,6 @@ body {
 }
 
 .fireworks-container {
-    height: 80vh;
-    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -462,22 +459,26 @@ body {
     bottom: -200px;
     /* Ẩn ban đầu */
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 200px;
     background: red;
     transition: bottom 0.3s ease-in-out;
+    margin-left: 370px;
+    margin-top: -10px;
+    border-radius: 10px;
 }
 
 .toggle-button {
     position: fixed;
-    bottom: 10px;
+    bottom: 2px;
     left: 50%;
+    font-size: 20px;
     transform: translateX(-50%);
-    background: black;
+    background: white;
     border: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
@@ -488,7 +489,7 @@ body {
 }
 
 .bottom-panel.show {
-    bottom: 0;
+    bottom: 50px;
 }
 
 .bottom-panel.show+.toggle-button span {
@@ -499,5 +500,7 @@ body {
     text-align: center;
     font-size: 24px;
     color: white;
-    padding: 20px;
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
